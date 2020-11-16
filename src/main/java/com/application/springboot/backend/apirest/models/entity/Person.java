@@ -31,6 +31,9 @@ public class Person implements Serializable{
 	@Column(name="mother_id")
 	public long motherId;
 	
+	public Person() {
+		super();
+	}
 	
 	
 	public Person(long id, String fullname, Date birth, long fatherId, long motherId) {
@@ -67,7 +70,7 @@ public class Person implements Serializable{
 		this.fatherId = fatherId;
 	}
 	public long getMotherId() {
-		return fatherId;
+		return motherId;
 	}
 	public void setMotherId(long motherId) {
 		this.motherId = motherId;
